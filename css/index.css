@@ -49,6 +49,7 @@ section h2{
 	padding-bottom: .5em;
 	border-bottom: 1px solid #ccc;
 	margin-bottom: .5em;
+	margin-top: .5em;
 }
 
 table{
@@ -82,7 +83,6 @@ label{
 	width: 100%;
 	border: 1px solid #ccc;
 	padding: .7em;
-	width: 100%;
 }
 
 .campo-medio{
