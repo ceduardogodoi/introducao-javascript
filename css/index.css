@@ -140,3 +140,7 @@ button[disabled=disabled], button:disabled {
 .campo-nome {
 	width: 100%;
 }
+
+#mensagem-erro {
+	color: red;
+}

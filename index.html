@@ -71,8 +71,11 @@
 	</main>
 
 	<section class="container">
-	    <h2 id="titulo-form">Adicionar novo paciente</h2>
-	    <form id="form-adiciona">
+		<h2 id="titulo-form">Adicionar novo paciente</h2>
+		
+		<span id="mensagem-erro"></span>
+		
+		<form id="form-adiciona">
 	        <div class="grupo" style="width: 97%;">
 	            <label for="nome">Nome:</label>
 	            <input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
@@ -93,7 +96,7 @@
 	        <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
 	    </form>
 	</section>
-
+	
 	<script src="js/calcula-imc.js"></script>
 	<script src="js/form.js"></script>
 
