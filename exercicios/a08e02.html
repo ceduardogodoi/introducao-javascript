@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Aula 08 Exercício 02</title>
+</head>
+<body>
+    <textarea id="corpo-postagem" cols="40" rows="5"></textarea>
+    <p>Caracteres: <span id="numero-caracteres">0</span> caracteres.</p>
+    
+    <!-- contador.js -->
+    <script>
+        function atualizaCaracteres() {
+            var postagem = document.querySelector("#corpo-postagem").value;
+            var caracteres = postagem.length;
+            
+            var contador = document.querySelector("#numero-caracteres");
+            contador.innerHTML = caracteres;
+        }
+        
+        var campoPostagem = document.querySelector("#corpo-postagem");
+        campoPostagem.addEventListener("input", atualizaCaracteres);
+    </script>        
+</body>
+</html>
