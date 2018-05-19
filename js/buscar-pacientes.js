@@ -5,10 +5,13 @@ botaoBuscar.addEventListener("click", function(event) {
     
     var xhr = new XMLHttpRequest();
 
-    xhr.open("GET", "http://api-pacientes.herokuapp.com/pacientes111");
+    xhr.open("GET", "http://api-pacientes.herokuapp.com/pacientes");
 
     xhr.addEventListener("load", function() {
+        var erroAjax = document.querySelector("#erro-ajax");
+
         if (xhr.status == 200) {
+            erroAjax.classList.add("invisivel");
             var resposta = xhr.responseText;
             var pacientes = JSON.parse(resposta);
     
@@ -18,13 +21,8 @@ botaoBuscar.addEventListener("click", function(event) {
         } else {
             console.log(xhr.status);
             console.log(xhr.responseText);
-            var erroAjax = document.querySelector("#erro-ajax");
             erroAjax.style.color = "red";
             erroAjax.classList.remove("invisivel");
-
-            // Vídeo parou em 5:00 (Aula 09 Exercício 05)
-            // url contém erro proposital para simular o erro
-            // lembre-se de arruma-la
         }
     });
 
